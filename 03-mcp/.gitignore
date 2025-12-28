@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Data files
+data/
+
+# Temporary / local tests
+test_q4.py
