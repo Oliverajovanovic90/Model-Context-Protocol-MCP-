@@ -1,6 +1,6 @@
 # Model-Context-Protocol-MCP - Documentation Search Server
 
-### Project Overview
+## Project Overview
 
 This project implements a Model Context Protocol (MCP) server, inspired by tools like Context7, that enables an AI assistant to:
 
@@ -14,7 +14,7 @@ Expose these capabilities as MCP tools
 
 The server is built using FastMCP, minsearch, and uv for modern Python dependency management.
 
-### Purpose
+## Purpose
 
 Large language models often lack access to up-to-date or project-specific documentation.
 This project solves that problem by:
@@ -25,7 +25,7 @@ Making it searchable
 
 Allowing an AI assistant to retrieve relevant context dynamically
 
-#### This pattern is essential for:
+### This pattern is essential for:
 
 AI copilots
 
@@ -45,8 +45,9 @@ Jina Reader — converts web pages to clean Markdown
 
 Python 3.12
 
----
-Project Structure
+
+## Project Structure
+```
 03-mcp/
 ├─ main.py              # MCP server with exposed tools
 ├─ download.py          # Downloads documentation ZIP
@@ -57,10 +58,11 @@ Project Structure
 ├─ uv.lock              # Locked dependency versions
 ├─ .gitignore           # Excludes local & generated files
 └─ README.md
----
+```
 
 ## Step-by-Step Design Explanation
-#### 1. Dependency Management with uv
+
+### 1. Dependency Management with uv
 
 We use uv instead of pip/venv because it:
 
@@ -94,7 +96,7 @@ https://r.jina.ai/
 
 This avoids HTML parsing and ensures consistent text output.
 
-##### Purpose:
+#### Purpose:
 
 Enable AI tools to read real web content
 
